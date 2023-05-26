@@ -1,0 +1,73 @@
+.hero {
+    .container {
+        @include flex-between;
+
+        .hero-left {
+            position: relative;
+            top: -195px;
+            h1 {
+                font-size: 4.2rem;
+                line-height: 1;
+                color: $heading-color;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                color: $text-color;
+                font-size: 1.1rem;
+                margin-bottom: 4rem;
+            }
+
+            .hero-btn {
+                color: white;
+                background-color: $primary-color;
+                padding: 1.8rem 2.8rem;
+                border-radius: 1.2rem;
+                transition: .3s;
+                box-shadow: 0 44px 84px -24px $primary-color;
+
+                &:hover {
+                    background-color: $primary-color-contrast;
+                }
+            }
+        }
+
+        .hero-right {
+            img {
+                display: inline-block;
+                position: relative;
+                z-index: -10;
+
+                &:first-child {
+                    width: 468px;
+                    z-index: -5;
+                    top: 90px;
+                    left: -20px;
+                }
+
+                &:nth-child(2) {
+                    width: 560px;
+                    z-index: 0;
+                    top: -150px;
+                    left: 100px;
+                }
+
+                &:last-child {
+                    width: 118px;
+                    z-index: 5;
+                    top: -820px;
+                    left: 480px;
+                }
+            }
+        }
+
+        .graphic2 {
+            width: 342px;
+            position: absolute;
+            z-index: -100;
+            top: 120px;
+            left: 1000px;
+        }
+    }
+    margin-bottom: -345px;
+}

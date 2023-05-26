@@ -1,0 +1,112 @@
+.portfolio {
+    .container {
+        padding-top: 8.8rem;
+        padding-bottom: 8.8rem;
+
+        .portfolio-title {
+            color: $subheading-color;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            text-transform: capitalize;
+        }
+            
+        .portfolio-subtitle {
+            color: $heading-color;
+            font-weight: 500;
+            font-size: 3.3rem;
+            margin-bottom: 1.6rem;
+            width: 400px;
+        }
+
+        .portfolio-projects {
+            .filter-links {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                column-gap: 6rem;
+                padding: 1.5rem .5rem 3.5rem .5rem; 
+                .filter-link {
+                    text-transform: capitalize;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color: $text-color;
+                    cursor: pointer;
+                    line-height: 1rem;
+                    transition: .3s;
+                    &:hover {
+                        color: $heading-color;
+                    }
+                }
+
+
+                .filter-link.active {
+                    color: $heading-color;
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 100%;
+                        height: 2px;
+                        
+                        background-color: $primary-color;
+                        border-radius: 1rem;
+                    }
+                }
+
+            }
+
+            .projects {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4.5rem;
+
+                .project {
+                    border-radius: 2rem;
+                    overflow: hidden;
+                    .image-wrapper {
+                        overflow: hidden;
+                        height: 520px;
+                        img {
+                            border-radius: 2rem 2rem 0 0;
+                            cursor: pointer;
+                            width: 100%;
+                            height: 100%;
+    
+                            transition: 1s;
+    
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                    background-color: rgb(253, 253, 253);
+                    box-shadow: 0 55px 86px -35px rgb(236, 242, 246);
+
+                    .project-content {
+                        padding: 2rem 2.6rem;
+                        line-height: 1.8;
+                        .project-title {
+                            text-transform: capitalize;
+                            color: $heading-color;
+                            font-size: 1.8rem;
+                            font-weight: 600;
+                            transition: .3s;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+
+                        .project-description {
+                            color: $text-color;
+                            width: 50%;
+                            text-overflow: ellipsis;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

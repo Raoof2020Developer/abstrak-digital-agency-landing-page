@@ -1,0 +1,105 @@
+.about {
+    position: relative;
+    background-color: $second-bg-color;
+    z-index: 0;
+    
+    .about-graphic {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .container {
+        padding-top: 8.8rem;
+        padding-bottom: 6rem;
+        display: flex;
+        align-items: center;
+        
+        .about-left {
+            z-index: 10;
+            padding-right: 9rem;
+            .about-title {
+                color: $subheading-color;
+                font-size: 1.3rem;
+                font-weight: 500;
+                margin-bottom: 1.5rem;
+                text-transform: capitalize;
+            }
+            
+            .about-subtitle {
+                z-index: 10;
+                color: $heading-color;
+                font-weight: 500;
+                font-size: 3.3rem;
+                margin-bottom: 1.6rem;
+            }
+            
+            .about-paragraph {
+                z-index: 1;
+                color: $text-color;
+                font-size: 1.125rem;
+                padding-right: 3rem;
+                margin-bottom: 3.5rem;
+            }
+        }
+
+        .about-right {
+            background-color: $white;
+            padding: 2.8rem 3.3rem;
+            border-radius: 2rem;
+            width: 125%;
+
+            h2 {
+                font-size: 2.3rem;
+                font-weight: 500;
+                color: $heading-color;
+                margin-bottom: 1.5rem;
+            }
+            .about-form {
+                label {
+                    color: $heading-color;
+                    font-weight: 500;
+                    font-size: .95rem;
+                }
+                input {
+                    margin: 1.2rem 0;
+                    display: block;
+                    margin-left: .5rem;
+                    border: none;
+                    outline: none;
+                    padding: 1rem 1.1rem;
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    color: rgba($color: $text-color, $alpha: 0.9);
+                    border: 1px solid rgb(230, 229, 229);
+                    border-radius: 1rem;
+                    width: 94%;
+                    transition: .3s;
+                }
+
+                .about-btn {
+                    text-align: center;
+                    background-color: $primary-color;
+                    display: block;
+                    padding: 1.2rem 0;
+                    text-transform: capitalize;
+                    color: $white;
+                    border-radius: 1rem;
+                    margin: 3rem 0 1.5rem 0;
+                    margin-left: .5rem;
+                    width: 94%;
+                    font-size: .96rem;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                    transition: .3s;
+                    &:hover {
+                        background-color: $primary-color-contrast;
+                    }
+                }
+            }
+        }
+
+        .about-graphic {
+            z-index: 0;
+        }
+    }
+}

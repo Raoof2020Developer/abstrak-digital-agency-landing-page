@@ -1,0 +1,46 @@
+.clients {
+    background-color: $dark-bg-color;
+    position: relative;
+    
+    .container {
+        padding-top: 8.8rem;
+        padding-bottom: 8.8rem;
+
+        .clients-title {
+            color: $subheading-color;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+    
+        .clients-subtitle {
+            color: white;
+            font-weight: 500;
+            font-size: 3.3rem;
+            width: 50%;
+            margin-bottom: 1.6rem;
+        }
+        
+        .clients-paragraph {
+            color: rgba($color: $white, $alpha: .5);
+            width: 40%;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .brands-list {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            .brand-item img {
+                filter: grayscale(100%);
+                opacity: .3;
+                transition: .3s;
+
+                &:hover {
+                    filter: unset;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

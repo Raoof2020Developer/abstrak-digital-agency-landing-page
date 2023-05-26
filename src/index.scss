@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$dark : rgb(39, 39, 46);
+$white: rgb(255, 255, 255);
+$primary-color: rgb(89, 86, 233);
+$primary-color-contrast: rgb(51, 48, 197);
+$heading-color: rgb(39, 39, 46);
+$subheading-color: rgb(199, 92, 111);
+$text-color: rgb(82, 82, 96);
+$main-bg-color: $white;
+$second-bg-color: rgb(236, 242, 246);
+$dark-bg-color: $dark;
+$font-primary: 'DM Sans', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+
+@import './components/Header/Header.scss';
+@import './components/Hero/Hero.scss';
+@import './components/Services/Services.scss';
+@import './components/Features/Features.scss';
+@import './components/About/About.scss';
+@import './components/Portfolio/Portfolio.scss';
+@import './components/CaseStudy/CaseStudy.scss';
+@import './components/Testimonial/Testimonial.scss';
+@import './components/Pricing/Pricing.scss';
+@import './components/Clients/Clients.scss';
+@import './components/Stories/Stories.scss';
+@import './components/Contact/Contact.scss';
+@import './components/Estimate/Estimate.scss';
+@import './components/Footer/Footer.scss';
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body.dark-theme {
+    $main-bg-color: rgb(33, 33, 33);
+    $second-bg-color: rgb(41, 41, 48);
+    $text-color: rgb(211, 211, 212);
+    $white: $dark;
+
+    background-color: $main-bg-color;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-secondary;
+    
+    
+    h1, h2, h3 {
+        font-family: $font-primary;
+    }
+
+    a {
+        text-decoration: none;
+        color: $text-color;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    // hr {
+    //     display: inline-block;
+    // }
+    
+    
+    .container {
+        max-width: 1290px;
+        margin: auto;
+    }
+}

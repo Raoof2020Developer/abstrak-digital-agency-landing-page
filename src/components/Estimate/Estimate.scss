@@ -1,0 +1,130 @@
+.estimate {
+    padding-top: 8rem;
+    padding-bottom: 25rem;
+    background-color: $primary-color;
+    position: relative;
+    
+    .container {
+        
+        line-height: 1.8;
+        text-align: center;
+        
+        .estimate-title {
+            color: #ff9900;
+            position: relative;
+            text-transform: capitalize;
+            font-size: 1.3rem;
+            font-weight: 500;
+            z-index: 10;
+        }
+        
+        .estimate-subtitle {
+            position: relative;
+            color: white;
+            font-size: 3.3rem;
+            font-weight: 500;
+            text-transform: capitalize;
+            z-index: 10;
+            margin-bottom: 3.2rem;
+        }
+
+        .estimate-btn {
+            text-transform: capitalize;
+            background-color: white;
+            padding: 1.5rem 2.4rem;
+            border-radius: 1rem;
+            font-weight: 500;
+            color: #0d6efd;
+            transition: .3s;
+            position: relative;
+            z-index: 10;
+
+            &:hover {
+                background-color: #ff9900;
+                color: white;
+            }
+        }
+        
+        .estimate-illustrations {
+            margin-top: 7rem;
+            position: absolute;
+            img:first-child {
+                position: absolute;
+                top: 2.11rem;
+                left: 14rem;
+                z-index: 10;
+            }
+    
+            img:nth-child(2) {
+                position: absolute;
+                left: 30rem;
+                top: -2rem;
+                z-index: 1;
+            }
+            
+            img:last-child {
+                position: absolute;
+                top: 0rem;
+                left: 60rem;
+                z-index: 10;
+            }
+        }
+        hr {
+            position: relative;
+            top: 30.3rem;
+            border: unset;
+            height: 1px; 
+            background-color: rgba($color: #000000, $alpha: .1);
+        }
+
+        .graphics {
+            position: absolute;
+
+            .graphic1 {
+                position: absolute;
+                top: -21.3rem;
+                left: 20rem;
+                z-index: 0;
+            }
+
+            .graphic2 {
+                position: absolute;
+                left: 70rem;
+                top: -5rem;
+            }
+
+            .graphic3 {
+                position: absolute;
+                left: 15rem;
+                top: -4rem;
+            }
+
+            .graphic4 {
+                position: absolute;
+                left: 72rem;
+                top: 3rem;
+            } 
+
+            .graphic5 {
+                position: absolute;
+                left: 12rem;
+                top: -10rem;
+                opacity: .5;
+            } 
+
+            .graphic6 {
+                position: absolute;
+                left: 12rem;
+                top: -17rem;
+            } 
+
+            .graphic7 {
+                position: absolute;
+                left: 8rem;
+                top: 17rem;
+            } 
+        }
+        
+    }
+    margin-bottom: 10rem;
+}

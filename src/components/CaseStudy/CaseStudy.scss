@@ -1,0 +1,60 @@
+.case_study {
+    background-color: $dark-bg-color;
+    .container {
+        text-align: center;
+        padding-top: 8.8rem;
+        padding-bottom: 8.8rem;
+        line-height: 1.8;
+
+        .case_study-title {
+            color: $subheading-color;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        .case_study-subtitle {
+            color: white;
+            font-size: 3.3rem;
+            font-weight: 600;
+        }
+
+        .case_study-text {
+            color: rgba($color: $white, $alpha: .5);
+            font-size: 1.15rem;
+            padding-left: 20rem;
+            padding-right: 20rem;
+            line-height: 1.5;
+        }
+
+        .achivements-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            column-gap: 1.5rem;
+
+            .achivement-item {
+                padding: 4.2rem !important;
+                padding-bottom: 1rem;
+                border-radius: 2.4rem;
+                transition: .3s;
+
+                &:hover {
+                    background-color: rgba($color: #000, $alpha: .1);
+                }
+
+                .achievement-nbr {
+                    color: $primary-color;
+                    font-size: 3.5rem;
+                    font-weight: 400;
+                }
+
+                .achievement-text {
+                    color: white;
+                    font-size: 1.18rem;
+                }
+            }
+        }
+    }
+}

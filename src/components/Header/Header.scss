@@ -1,0 +1,61 @@
+.header {
+    .container {
+        @include flex-between;
+        align-items: center;
+        text-transform: capitalize;
+        padding: 1rem 0;
+        z-index: 10;
+        transition: .3s;
+
+        .nav-menu {
+            @include flex-between;
+            column-gap: 3rem;
+            
+            .nav-list {
+                @include flex-between;
+                column-gap: 2.7rem;
+                
+                .nav-link {
+                    font-weight: 500;
+                    font-size: .95rem;
+                    transition: .3s;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0%;
+                        height: 2px;
+                        background-color: $primary-color;
+                        transition: .3s;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            .nav-btn {
+                background-color: $primary-color;
+                color: white;
+                padding: 1.1rem 3.2rem;
+                border-radius: 1rem;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $primary-color-contrast;
+                }
+            }
+        }
+        .graphic1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -10;
+        }
+    }
+}
